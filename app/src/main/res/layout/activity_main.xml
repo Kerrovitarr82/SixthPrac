@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:onClick="add"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/nickname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nickname"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/nickname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nickname"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname2"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/saveBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save File"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/openBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open File"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/openBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open File Ex"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete File"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openBtn2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/saveBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save File Ex"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Preference"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nickname"
+        app:layout_constraintBottom_toTopOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+        app:layout_constraintVertical_bias="0" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="413dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
